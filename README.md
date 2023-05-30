@@ -1,3 +1,7 @@
+
+![Screenshot (8)](https://github.com/AdamVignesh/Calculator-react/assets/69408077/4d3f596b-c30d-4902-af0b-33342d88169b)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
