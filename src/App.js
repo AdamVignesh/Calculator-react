@@ -11,7 +11,8 @@ function App() {
   
   const [display,setDisplay] = useState("Calculator");
   const [output,setOutput] = useState("Input goes here");
-  const [flag,setFlag] = useState(false);
+  // const [flag,setFlag] = useState(false);
+  let flag = false;
 
   function calcValue()
   {
@@ -33,7 +34,7 @@ function App() {
   {
     if(value==="AC")
     {
-      setFlag(false);
+      flag = false;
       setDisplay("Calculator");
       setOutput("Input goes here");
 
@@ -53,18 +54,18 @@ function App() {
     }
     else if(value == '=')
     {    
-      setFlag(true);
+      flag = true;
       calcValue();
     }
     else if(display==="Calculator")
     {
-      setFlag(false);
+      flag = false;
       setDisplay(value);
       
     }
     else
     {
-      setFlag(false);
+      flag = false;
       setDisplay(display+value);
     }
   }
